@@ -1,8 +1,0 @@
-Metadata-Version: 2.1
-Name: cnnClassifier
-Version: 0.0.0
-Summary: Python package for a CNN app
-Home-page: https://github.com/SamNgigi/LungCancerClassification
-Author: SamNgigi
-Author-email: sam.t.ngigi@gmail.com
-Project-URL: Bug Tracker:, https://github.com/SamNgigi/LungCancerClassification/issues
