@@ -1,6 +1,6 @@
 tensorflow==2.15.0
 pandas 
-gdown
+gdown # download files from google drive
 dvc
 mlflow==2.10.0
 notebook
