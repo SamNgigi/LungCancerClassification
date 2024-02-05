@@ -1,25 +1,25 @@
 from cnnClassifier.config.configuration import ConfigurationManager
-from cnnClassifier.components.data_ingestion import DataIngestion
+from cnnClassifier.components.base_model import PrepBaselineModel
 from cnnClassifier import logger
 
-STAGE_NAME = "Data Ingestion Stage"
+STAGE_NAME = "Prepare base model"
 
-class DataIngestionTrainingPipeline:
+class PrepareBaseModelTrainingPipeling:
     def __init__(self):
         pass
-    
+
     def main(self):
         config = ConfigurationManager()
-        data_ingestion_config = config.get_data_ingestion_config()
-        data_ingestion = DataIngestion(config=data_ingestion_config)
-        data_ingestion.download_file()
-        data_ingestion.extract_zip_file()
+        base_model_config = config.get_base_model_config()
+        base_model = PrepBaselineModel(config=base_model_config)
+        base_model.get_base_model()
+        base_model.update_base_model()
 
 
 if __name__ == "__main__":
     try:
         logger.info(f"{'>'*5} STAGE: {STAGE_NAME} started... {'<'*5}\n")
-        obj = DataIngestionTrainingPipeline()
+        obj = PrepareBaseModelTrainingPipeling()
         obj.main()
         logger.info(
             f"\n\n{'>'*5} STAGE: {STAGE_NAME} completed!! {'<'*5}\n\nx{'='*10}x"
