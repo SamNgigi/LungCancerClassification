@@ -5,7 +5,7 @@ from cnnClassifier import logger
 from cnnClassifier.utils.common import get_size
 from cnnClassifier.entity.config_entity import DataIngestionConfigEntity
 
-class DataIngestion:
+class DataIngestionComponent:
     def __init__(self, config: DataIngestionConfigEntity):
         self.config = config
 
