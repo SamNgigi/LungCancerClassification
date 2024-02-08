@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/samtn/Documents/01.%20Rough%20Work/labs/MLOps/LungCancerClassification/mlruns/0/c4a10450fb0340c599e6d5154893c4ad/artifacts
+end_time: 1707395381354
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c4a10450fb0340c599e6d5154893c4ad
+run_name: agreeable-bird-21
+run_uuid: c4a10450fb0340c599e6d5154893c4ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707395368675
+status: 3
+tags: []
+user_id: samtn

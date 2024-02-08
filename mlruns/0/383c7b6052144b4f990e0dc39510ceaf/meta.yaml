@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/samtn/Documents/01.%20Rough%20Work/labs/MLOps/LungCancerClassification/mlruns/0/383c7b6052144b4f990e0dc39510ceaf/artifacts
+end_time: 1707392322950
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 383c7b6052144b4f990e0dc39510ceaf
+run_name: treasured-stag-456
+run_uuid: 383c7b6052144b4f990e0dc39510ceaf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707392306326
+status: 3
+tags: []
+user_id: samtn
