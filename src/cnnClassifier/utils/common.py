@@ -39,6 +39,26 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
 
 
 @ensure_annotations
+def load_env_variables_from_yaml(path_to_yaml: str):
+    """#* Read env yaml file
+
+    #* Args:
+       #* path_to_yaml (Path): path like input
+
+    #* Raises:
+       #* e: 
+    """
+    try:
+        content = read_yaml(Path(path_to_yaml))
+        for key, val in content.mlflow.items():
+            os.environ[key] = val
+    except Exception as e:
+        logger.exception(e)
+        raise e
+        
+
+
+@ensure_annotations
 def create_directories(path_to_directories: list, verbose=True):
     """#* create list of directories
 
@@ -54,7 +74,7 @@ def create_directories(path_to_directories: list, verbose=True):
 
 
 @ensure_annotations
-def save_json(path: Path, data: dict)->None:
+def save_json(path: Path, data: dict):
     """#* save json data
 
     #* Args:

@@ -3,7 +3,8 @@ from cnnClassifier.constants import *
 from cnnClassifier.utils.common import read_yaml, create_directories
 from cnnClassifier.entity.config_entity import (DataIngestionConfigEntity,
                                                 BaseModelConfigEntity,
-                                                TrainingConfigEntity)
+                                                TrainingConfigEntity,
+                                                EvaluationConfigEntity)
 
 class ConfigurationManager:
     def __init__(
@@ -68,3 +69,14 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+    def get_evaluation_config(self) -> EvaluationConfigEntity:
+        eval_config = EvaluationConfigEntity(
+            model_path=Path(f"{self.config.training.root_dir}/model.keras"),
+            training_data_path=Path(f"{self.config.data_ingestion.unzip_dir}/Chest-CT-Scan-data"),
+            mlflow_uri=os.getenv("MLFLOW_TRACKING_URI"),
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config

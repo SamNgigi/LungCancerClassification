@@ -32,3 +32,12 @@ class TrainingConfigEntity:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list
+    
+@dataclass(frozen=True)
+class EvaluationConfigEntity:
+    model_path: Path
+    training_data_path: Path
+    all_params: dict
+    mlflow_uri: str
+    params_image_size: list
+    params_batch_size: int

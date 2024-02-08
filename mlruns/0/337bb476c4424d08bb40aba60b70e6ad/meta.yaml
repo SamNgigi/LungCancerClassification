@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/samtn/Documents/01.%20Rough%20Work/labs/MLOps/LungCancerClassification/mlruns/0/337bb476c4424d08bb40aba60b70e6ad/artifacts
+end_time: 1707388750452
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 337bb476c4424d08bb40aba60b70e6ad
+run_name: blushing-stoat-738
+run_uuid: 337bb476c4424d08bb40aba60b70e6ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707388750387
+status: 4
+tags: []
+user_id: samtn
