@@ -14,7 +14,8 @@ class EvaluationPipeline:
         model_evaluator = EvaluationComponent(config=eval_configs)
         model_evaluator.evaluate_model()
         model_evaluator.save_score()
-        model_evaluator.log_into_mlfow()
+        # #? COMMENT OUT DURING DEPLOY TO PRODUCTION
+        # model_evaluator.log_into_mlfow()
 
 
 if __name__ == "__main__":
